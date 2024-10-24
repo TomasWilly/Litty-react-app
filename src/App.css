@@ -12,6 +12,7 @@
   background: #1D1D1D;
   border: 1px solid #333333;
   padding-left:10px;
+  margin-bottom: 16px;
 }
 
 .logo>img {
@@ -68,4 +69,42 @@
   gap: 0px;
   border: 2px 0px 0px 0px;
   opacity: 0px;
+}
+
+.leftbar>div>div {
+  width: 100%;
+  padding: 8px;
+  gap: 0px;
+  opacity: 0px;
+  border: 1px solid #333333
+}
+
+.leftbar>div>div>img {
+  width: 36.48px;
+  height: 32px;
+  top: 6px;
+  margin-left: 15px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.leftbar>div>div>h2 {
+  font-size: 24px;
+  line-height: 28.64px;
+  text-align: left;
+  margin-left: 22px;
+}
+
+.item1 button {
+  width: 64px;
+  height: 16px;
+  top: 20px;
+  padding: 0px;
+  gap: 0px;
+  border-radius: 8px;
+  opacity: 0px;
+  margin-right: 3px;
+  color:#ffffff;
+  background: #EBCF83;
 }

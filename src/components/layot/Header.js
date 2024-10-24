@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
     return (
         <div className="header flex items-center justify-center">
-            <div className="flex justify-between w-full lg:w-2/4">
+            <div className="flex justify-between w-full lg:w-2/4 pr-[20px] pl-[20px]">
                 <div className="logo flex items-center relative">
                     <img src="assets/images/logo.png" alt="" />
                     <input className="hidden md:block" type="text" placeholder="Search" />

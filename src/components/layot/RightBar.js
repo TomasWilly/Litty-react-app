@@ -2,7 +2,7 @@ import React from "react";
 
 const RightBar = () => {
     return (
-        <div>RightBar</div>
+        <div className="flex-none">RightBar</div>
     )
 }
 
