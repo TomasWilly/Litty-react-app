@@ -48,6 +48,38 @@ const trendsDatas = [
         url1:'assets/images/Ellipse3.png',
         url2:'assets/images/Ellipse3.png',
         url3:'assets/images/Ellipse3.png'
+    },
+    {
+        button:'GAMING',
+        value1:123,
+        value2:121.1,
+        url1:'assets/images/Ellipse3.png',
+        url2:'assets/images/Ellipse3.png',
+        url3:'assets/images/Ellipse3.png'
+    },
+    {
+        button:'GAMING',
+        value1:123,
+        value2:121.1,
+        url1:'assets/images/Ellipse3.png',
+        url2:'assets/images/Ellipse3.png',
+        url3:'assets/images/Ellipse3.png'
+    },
+    {
+        button:'GAMING',
+        value1:123,
+        value2:121.1,
+        url1:'assets/images/Ellipse3.png',
+        url2:'assets/images/Ellipse3.png',
+        url3:'assets/images/Ellipse3.png'
+    },
+    {
+        button:'GAMING',
+        value1:123,
+        value2:121.1,
+        url1:'assets/images/Ellipse3.png',
+        url2:'assets/images/Ellipse3.png',
+        url3:'assets/images/Ellipse3.png'
     }
 ]
 
