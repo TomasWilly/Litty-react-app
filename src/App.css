@@ -79,6 +79,25 @@
   border: 1px solid #333333
 }
 
+.rightbar>div>div {
+  width: 100%;
+  padding: 8px;
+  gap: 0px;
+  opacity: 0px;
+  border: 1px solid #333333
+}
+
+.rightbar>div {
+  border: 1px solid #333333
+}
+
+.rightbar>div>div>div {
+  width: 100%;
+  padding: 8px;
+  gap: 0px;
+  opacity: 0px;
+}
+
 .leftbar>div>div>img {
   width: 36.48px;
   height: 32px;
@@ -106,5 +125,36 @@
   opacity: 0px;
   margin-right: 3px;
   color:#ffffff;
+  background: #EBCF83;
+}
+
+.item4 button {
+  height: 16px;
+  top: 20px;
+  padding: 0px 5px;
+  gap: 0px;
+  border-radius: 8px;
+  opacity: 0px;
+  margin-right: 3px;
+  color:#ffffff;
+  background: #EBCF83;
+}
+
+.item4 {
+  border-bottom: 1px solid #EBCF83!important;
+  border-top: 1px solid #EBCF83!important;
+  margin-bottom: 8px;
+}
+
+.item3>div>button {
+  width: 64px;
+  height: 16px;
+  top: 20px;
+  padding: 0px;
+  gap: 0px;
+  border-radius: 8px;
+  opacity: 0px;
+  margin-right: 3px;
+  color: #1A1A1A;
   background: #EBCF83;
 }

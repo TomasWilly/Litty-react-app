@@ -101,7 +101,7 @@ const LeftBar = () => {
             </div>
             <div>
                 <div className="place-items-center">
-                    <h3 className="text-white font-medium text-[24px]">TRENDS</h3>
+                    <h3 className="text-white font-bold text-[24px]">TRENDS</h3>
                 </div>
                 {trendsDatas.map((item, index) => {
                     return (
