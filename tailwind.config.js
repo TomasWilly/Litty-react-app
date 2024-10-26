@@ -8,7 +8,7 @@ module.exports = {
             'md': '768px',
             'lg': '1024px',
             'xl': '1440px',
-            '2xl': '2560px',
+            '2xl': '1805px',
         },
         colors: {
             'blue': '#1fb6ff',
@@ -18,7 +18,8 @@ module.exports = {
             'green': '#13ce66',
             'yellow': '#ffc82c',
             'gray-dark': '#273444',
-            'gray': '#8492a6',
+            'gray': '#474c54',
+            'gray2': '#1d1d1d',
             'gray-light': '#d3dce6',
             'fontcolor': '#EBCF83',
             'white': '#ffffff',
