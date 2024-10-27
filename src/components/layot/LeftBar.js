@@ -85,7 +85,7 @@ const trendsDatas = [
 
 const LeftBar = () => {
     return (
-        <div className="leftbar flex-none w-full lg:w-1/4">
+        <div className="leftbar flex-none w-full xl:w-1/4">
             <div className="mb-[22px]">
                 <div className="flex items-center">
                     <img src="assets/images/logo.png" alt="" />

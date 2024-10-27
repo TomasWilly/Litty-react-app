@@ -8,7 +8,7 @@ const MainLayout = () => {
     return (
         <div className="app">
             <Header/>
-            <div className="flex pr-[32px] pl-[32px]">
+            <div className="flex lg:grid flex-col xl:flex-row xl:flex lg:grid-cols-2 gap-4 pr-[32px] pl-[32px]">
                 <LeftBar/>
                 <Outlet/>
                 <RightBar/>

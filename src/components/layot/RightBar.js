@@ -1,6 +1,4 @@
 import React from "react";
-import Content1 from "./Content1";
-import Content2 from "./Content2";
 import Content3 from "./Content3";
 import Content4 from "./Content4";
 
@@ -82,7 +80,7 @@ const trendsDatas = [
 
 const RightBar = () => {
     return (
-        <div className="rightbar flex-none w-full lg:w-1/4">
+        <div className="rightbar flex-none w-full xl:w-1/4">
             <div className="mb-[22px]">
                 <div className="place-items-center">
                     <h3 className="text-white font-bold text-[24px]">MATCH</h3>

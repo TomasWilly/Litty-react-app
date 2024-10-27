@@ -17,6 +17,11 @@ const Header = () => {
                     <i className="fa fa-home custom mr-[10px] md:mr-[20px]"></i>
                     <img className=" mr-[10px] md:mr-[20px]" src="assets/images/Ellipse.png" alt="" />
                 </div>
+                <button className="block sm:hidden ">
+                    <div className="w-[25px] h-[3px] bg-fontcolor mt-[4px] mb-[4px] "></div>
+                    <div className="w-[25px] h-[3px] bg-fontcolor mt-[4px] mb-[4px] "></div>
+                    <div className="w-[25px] h-[3px] bg-fontcolor mt-[4px] mb-[4px] "></div>
+                </button>
             </div>
         </div>
     )
