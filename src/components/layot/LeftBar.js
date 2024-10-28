@@ -1,6 +1,6 @@
 import React from "react";
-import Content1 from "./Content1";
-import Content2 from "./Content2";
+import LittyComponent from "./LittyComponent";
+import TrendsComponent from "./TrendsComponent";
 
 const personDatas = [
     {
@@ -84,6 +84,18 @@ const trendsDatas = [
 ]
 
 const LeftBar = () => {
+    const showPersonData = personDatas.map((item, index) => 
+        <div key={index} className=" text-fontcolor">
+            <LittyComponent {...item} />
+        </div>                        
+    );
+
+    const showTrendsDatas = trendsDatas.map((item, index) =>
+        <div key={index} className=" text-fontcolor">
+            <TrendsComponent {...item} />
+        </div> 
+    );
+
     return (
         <div className="leftbar flex-none w-full xl:w-1/4">
             <div className="mb-[22px]">
@@ -91,25 +103,13 @@ const LeftBar = () => {
                     <img src="assets/images/logo.png" alt="" />
                     <h2 className="text-fontcolor font-bold">WHO'S LITTY</h2>
                 </div>
-                {personDatas.map((item, index) => {
-                    return (
-                        <div key={index} className=" text-fontcolor">
-                            <Content1 data={item} />
-                        </div>                        
-                    )
-                })}
+                {showPersonData}
             </div>
             <div>
                 <div className="place-items-center">
                     <h3 className="text-white font-bold text-[24px]">TRENDS</h3>
-                </div>
-                {trendsDatas.map((item, index) => {
-                    return (
-                        <div key={index} className=" text-fontcolor">
-                            <Content2 data={item} />
-                        </div>                        
-                    )
-                })}
+                </div>                
+                {showTrendsDatas}
             </div>
         </div>
     )

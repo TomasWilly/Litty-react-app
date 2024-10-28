@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Content3 = (props) => {
+const MatchComponent = ({url,name,value,button}) => {
   return (
-    <div className='item3 flex items-center'>
-        <img className='flex-none ml-[5px] sm:ml-[15] mr-[10px] sm:mr-[25px] w-[36px] h-[36px]' src={props.data.url} alt="" />
+    <div className='match flex items-center'>
+        <img className='flex-none ml-[5px] sm:ml-[15] mr-[10px] sm:mr-[25px] w-[36px] h-[36px]' src={url} alt="" />
         <div className='place-items-start grow'>
-            <h3 className='font-normal text-[14px]'>{props.data.name}</h3>
-            {props.data.button.map((item,index) => {
+            <h3 className='font-normal text-[14px]'>{name}</h3>
+            {button.map((item,index) => {
                 return (
                     <button key={index} className='font-normal text-[12px]'>{item}</button>
                 )
@@ -22,4 +22,4 @@ const Content3 = (props) => {
   )
 }
 
-export default Content3
+export default MatchComponent

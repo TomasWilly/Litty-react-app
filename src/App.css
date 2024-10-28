@@ -115,7 +115,7 @@
   margin-left: 22px;
 }
 
-.item1 button {
+.litty button, .trends button {
   width: 64px;
   height: 16px;
   top: 20px;
@@ -128,7 +128,7 @@
   background: #EBCF83;
 }
 
-.item4 button {
+.events button {
   height: 16px;
   top: 20px;
   padding: 0px 5px;
@@ -140,13 +140,13 @@
   background: #EBCF83;
 }
 
-.item4 {
+.events {
   border-bottom: 1px solid #EBCF83!important;
   border-top: 1px solid #EBCF83!important;
   margin-bottom: 8px;
 }
 
-.item3>div>button {
+.match>div>button {
   width: 64px;
   height: 16px;
   top: 20px;

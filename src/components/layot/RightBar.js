@@ -1,11 +1,10 @@
 import React from "react";
-import Content3 from "./Content3";
-import Content4 from "./Content4";
+import MatchComponent from "./MatchComponent";
+import EventsComponent from "./EventsComponent";
 
 const personDatas = [
     {
         name:"@JOHN.DOE",
-        value:77.8,
         button: [
             'GAMING','TECH'
         ],
@@ -13,7 +12,6 @@ const personDatas = [
     },
     {
         name:"@SPAWN.WORLD",
-        value:77.8,
         button: [
             'GAMING','TECH','MUSIC'
         ],
@@ -21,7 +19,6 @@ const personDatas = [
     },
     {
         name:"@JOHN.DOE",
-        value:77.8,
         button: [
             'GAMING','TECH'
         ],
@@ -29,7 +26,6 @@ const personDatas = [
     },
     {
         name:"@JOHN.DOE",
-        value:77.8,
         button: [
             'GAMING','TECH'
         ],
@@ -37,7 +33,6 @@ const personDatas = [
     },
     {
         name:"@JOHN.DOE",
-        value:77.8,
         button: [
             'GAMING','TECH'
         ],
@@ -79,6 +74,18 @@ const trendsDatas = [
 ]
 
 const RightBar = () => {
+    const showPersonData = personDatas.map((item, index) =>
+        <div key={`litty-${index}`} className=" text-fontcolor">
+            <MatchComponent {...item} />
+        </div>
+    );
+
+    const showTrendsDatas = trendsDatas.map((item, index) => 
+        <div key={`trend-${index}`} className={item.button!==''?"events text-fontcolor":"item4 bg-bgyellow text-fontcolor"}>
+            <EventsComponent {...item} />
+        </div>                        
+    );
+
     return (
         <div className="rightbar flex-none w-full xl:w-1/4">
             <div className="mb-[22px]">
@@ -86,26 +93,14 @@ const RightBar = () => {
                     <h3 className="text-white font-bold text-[24px]">MATCH</h3>
                 </div>
                 <div>
-                    {personDatas.map((item, index) => {
-                        return (
-                            <div key={index} className=" text-fontcolor">
-                                <Content3 data={item} />
-                            </div>                        
-                        )
-                    })}
+                    {showPersonData}
                 </div>
             </div>
             <div className="inline">
                 <div className="place-items-center">
                     <h3 className="text-white font-bold text-[24px]">ENENTS</h3>
                 </div>
-                {trendsDatas.map((item, index) => {
-                    return (
-                        <div key={index} className={item.button!==''?"item4 text-fontcolor":"item4 bg-bgyellow text-fontcolor"}>
-                            <Content4 data={item} />
-                        </div>                        
-                    )
-                })}
+                {showTrendsDatas}
             </div>
         </div>
     )
